@@ -1,16 +1,32 @@
+/* Layout Containers */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.header {
-    background-color: #f1f1f1;
     padding: 20px;
+}
+
+/* Header & Footer */
+.header, footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.footer {
-    background-color: #f1f1f1;
-    padding: 10px;
+/* The Background Image Section */
+.hero-image-section {
+    /* This points directly to your file since they are in the same folder */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('ScamBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
+    border-radius: 15px;
+    margin: 20px 0;
 }
